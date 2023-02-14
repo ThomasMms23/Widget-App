@@ -1,0 +1,42 @@
+body {
+  background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
+	color: white;
+  font: 16px system-ui, sans-serif;
+  margin: 3rem;
+}
+
+.search {
+  width: 400px; 
+  padding: 6px 12px;
+  background: rgb(31, 32, 35);
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  font-size: 13px;
+  color: rgb(247, 248, 248);
+  height: 46px;
+  appearance: none;
+  transition: border 0.15s ease 0s;
+  margin-bottom: 60px;
+}
+
+.search:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: rgb(100, 153, 255);
+}
+
+.card-city {
+  background: #fff;
+  color: black;
+  border-radius: 1em;
+  padding: 20px 40px;
+  width: 400px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.city-temp {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+}
