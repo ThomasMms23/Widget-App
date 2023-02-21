@@ -28,22 +28,25 @@ function App() {
       />
       {weather.main && (
         <div className="card-city">
-          <div className="date"> {new Date().toDateString("en-US")}</div>
           <h2 className="city-name">
             <span>{weather.name}</span>
-            <sup>{weather.sys.country}</sup>
+            <sup className="city-sup">{weather.sys.country}</sup>
           </h2>
-          <div className="city-temp">
-            {Math.round(weather.main.temp)}
-            <sup>&deg;C</sup>
-            <img
+          <img
               className="city-icon"
               src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
               alt={weather.weather[0].description}
             />
+          <div className="city-temp">
+            {Math.round(weather.main.temp)}
+            <sup>&deg;C</sup>
           </div>
           <div className="info">
             <p>{weather.weather[0].description}</p>
+          </div>
+          <div className="more-info">
+            <div>Humidity : {weather.main.humidity} %</div>
+            <div>Wind Speed : {weather.wind.speed} k/h</div>
           </div>
         </div>
       )}

@@ -1,22 +1,24 @@
 body {
-  background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
-	color: white;
+  background: url(/public/clear-sky-sunset-dusk-blue-sky-starry-sky-horizon-beach-2560x1440-4044.jpeg);
   font: 16px system-ui, sans-serif;
   margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica", "Arial", sans-serif;
+  align-items: center;
 }
 
 .search {
   width: 400px; 
   padding: 6px 12px;
-  background: rgb(31, 32, 35);
-  border: 1px solid rgb(60, 63, 68);
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid white;
+  border-radius: 1em;
   font-size: 13px;
-  color: rgb(247, 248, 248);
-  height: 46px;
+  height: 36px;
   appearance: none;
   transition: border 0.15s ease 0s;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .search:focus {
@@ -25,13 +27,28 @@ body {
       border-color: rgb(100, 153, 255);
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-city {
-  background: #fff;
-  color: black;
+  color: #fff;
   border-radius: 1em;
   padding: 20px 40px;
   width: 400px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, .2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.city-name {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
 }
 
 .city-temp {
@@ -39,4 +56,19 @@ body {
   align-items: center;
   font-size: 2em;
   font-weight: bold;
+}
+
+.city-sup {
+  background-color: orange;
+  padding: 3px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.more-info {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #fff;
+  padding-top: 30px;
 }
